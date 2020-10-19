@@ -98,7 +98,7 @@ In conclusion when are confident about the best model for our problem or just wa
 
 ## Future work
 **What are some areas of improvement for future experiments? Why might these improvements help the model?**
-We ran automl using ``accuracy`` as our primary metric. The problem with this is that the data is not really balanced, so as future improvement we will try other metrics like ``AUC_weighted``.
+We ran automl using ``accuracy`` as our primary metric. The problem with this is that the data is not really balanced. The data is highly skewed (there are many outliers in our data), we could remove this outliers to improve our predictions because outliers tend to attract the results in thier direction. We could also use metric like ``AUC_weighted``, which smoothens these ouliers. This can grealty help improve the accuracy of our model.
 
 ## Proof of cluster clean up
 **If you did not delete your compute cluster in the code, please complete this section. Otherwise, delete this section.**
